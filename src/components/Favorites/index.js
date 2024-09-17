@@ -14,15 +14,7 @@ const Favorites = () => {
       <h2>Favorites</h2>
       <div className="favorites-list">
         {favorites.map((book, index) => (
-          <BookCard
-            key={index}
-            book={book}
-            // title={book.title}
-            // author={book.author_name?.[0]}
-            // cover={book.cover_url} // Assuming you have a cover_url in the book data
-            // description={book.description} // Assuming a description field exists
-            // year={book.first_publish_year} // If applicable
-          />
+          <BookCard key={index} book={book} />
         ))}
       </div>
     </div>
